@@ -1,0 +1,49 @@
+# Publishes the website to GitHub Pages.
+# Runs automatically whenever a push to main changes the site/ folder (or this file),
+# and can also be started by hand from the repo's Actions tab.
+# Only the site/ folder is published. Planning notes and brand files are never part of the website.
+
+name: Publish website
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "site/**"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+# Only the permissions GitHub Pages needs
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One publish at a time; never cancel one that's halfway done
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Get the files
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - name: Set up GitHub Pages
+        uses: actions/configure-pages@v6
+
+      - name: Package the site folder
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: site
+
+      - name: Publish
+        id: deployment
+        uses: actions/deploy-pages@v5
