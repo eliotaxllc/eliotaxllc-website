@@ -106,7 +106,7 @@ Our website never touches the files. It's a trustworthy front door that points t
 
 ### 3.3 Hosting & domain
 
-- GitHub repository, **public** (required for free GitHub Pages). Only the `site/` folder is published, by a GitHub Actions workflow on every push to `main`.
+- GitHub repository, **public** (required for free GitHub Pages). Only the `site/` folder is published, by a GitHub Actions workflow (`.github/workflows/pages.yml`) on every push to `main` that changes `site/` or the workflow itself. Pushes that only change notes don't republish the site.
 - **eliotaxllc.com** is the main address. www.eliotaxllc.com redirects to it, and HTTP redirects to HTTPS.
 - Domain verified in your GitHub account, which prevents anyone else from hijacking it on GitHub Pages.
 

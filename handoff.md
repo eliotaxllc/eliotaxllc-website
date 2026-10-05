@@ -1,17 +1,16 @@
 # Handoff — elioTax website
-_Updated 2026-10-05, end of M4 session_
+_Updated 2026-10-05, end of M5 session_
 
-- **Position:** M4 complete → next: M5 (Go live at a temporary address).
-- **Live right now:** Website: nothing yet (the page is built in `site/` but not published). Project backup (public): https://github.com/eliotaxllc/eliotaxllc-website. Upload form (live, tested, branded): **https://forms.gle/7FcPZm8cmSSvmp8K7**
+- **Position:** M5 complete → next: M6 (Connect eliotaxllc.com).
+- **Live right now:** Website: **https://eliotaxllc.github.io/eliotaxllc-website/** (temporary address; HTTPS enforced; http redirects to https). Upload form: **https://forms.gle/7FcPZm8cmSSvmp8K7**. Project backup: https://github.com/eliotaxllc/eliotaxllc-website
 - **Not obvious from the files:**
-  - Local preview: `preview_start` with name **site** (http://localhost:8080). It runs `.claude/serve.ps1` with `-ExecutionPolicy Bypass` for that one process only (owner approved 2026-10-05; the system setting stays at the Windows default).
-  - The `/upload` shortcut uses a meta refresh (no JavaScript). It was tested: it reaches the form's Google sign-in, and Back returns to the page with no redirect loop.
-  - `canonical`, `og:url`, and `og:image` use full https://eliotaxllc.com addresses (link previews require them). The preview *image* won't appear until M6 connects the domain, so test link previews then.
-  - All checks passed: W3C validator (HTML + CSS, owner approved its use), keyboard focus, headings, alt text, 56px tap targets, 320px/200%-zoom reflow, zero outside requests, ~15 KB page.
-  - Uploads land in the owner's My Drive under "elioTax LLC - Secure Document Upload (File responses)". Folder is Restricted, owner only.
-- **Your to-dos before next session (M5):** Be ready for the page to be publicly reachable at a github.io address. Have your phone handy for testing, plus your family member for one more dummy upload.
+  - Pages source is "GitHub Actions" (turned on via the API on 2026-10-05). Publishing uses checkout v7, configure-pages v6, upload-pages-artifact v5, and deploy-pages v5 (current official versions as of that date). The first deploy took 16s.
+  - Verified live: all site files return 200; SPEC.md, handoff.md, brand/, and site/index.html paths return 404 (only `site/` is published).
+  - The owner tested on their computer and phone (padlock OK, Upload opens the form). A family member did a dummy upload from the live page: thank-you, email, Drive file, and Sheet row all OK. Test data deleted.
+  - Link-preview image and `canonical` point to https://eliotaxllc.com, so test link previews after M6.
+  - With Actions-based Pages, the custom domain is set in the repo's Pages settings. No CNAME file is needed in `site/`.
+- **Your to-dos before next session (M6):** Have your Namecheap sign-in ready and turn on Namecheap 2-step verification first. Check whether anything is set up at Namecheap (e.g., email forwarding) that must be kept. Main address with or without "www"? (Recommended: without, with www redirecting to it.)
 - **Watch out for:**
-  - Never commit the brand originals `.ai`/`.pdf`/`.jpg` (git-ignored; the PDF and JPG hold hidden personal details from the designer's computer).
-  - Never move, rename, or delete the "(File responses)" folder. Deleting a response doesn't delete its file or Sheet row.
-  - Update "© 2026" in `site/index.html` each January.
-  - Claude's shell sometimes can't find `git`/`gh`. Refresh PATH from the Machine+User environment variables first.
+  - Never commit the brand originals `.ai`/`.pdf`/`.jpg` (git-ignored; hidden personal details). Never move, rename, or delete the "(File responses)" folder.
+  - Update "© 2026" in `site/index.html` each January. Any push that changes `site/` goes live, so always ask first.
+  - Claude's shell sometimes can't find `git`/`gh`. Refresh PATH from the Machine+User environment first. In `gh --jq`, avoid spaces/quotes under PowerShell; pipe to ConvertFrom-Json instead.
