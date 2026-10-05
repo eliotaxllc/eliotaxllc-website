@@ -1,16 +1,15 @@
 # Handoff — elioTax website
-_Updated 2026-10-05, end of M2 session_
+_Updated 2026-10-05, end of M3 session_
 
-- **Position:** M2 complete → next: M3 (Brand & words).
-- **Live right now:** Website: nothing yet. Project backup (public): https://github.com/eliotaxllc/eliotaxllc-website. Upload form (live, tested, public by design): **https://forms.gle/7FcPZm8cmSSvmp8K7**
+- **Position:** M3 complete → next: M4 (Build the page).
+- **Live right now:** Website: nothing yet. Project backup (public): https://github.com/eliotaxllc/eliotaxllc-website. Upload form (live, tested, branded with navy theme + `brand/form-header.png`): **https://forms.gle/7FcPZm8cmSSvmp8K7**
 - **Not obvious from the files:**
-  - Git and GitHub CLI are installed. `gh` is signed in as eliotaxllc (token in the Windows keyring, includes the `workflow` scope M5 needs). Git author identity is set in this repo only.
-  - Uploads land in the owner's My Drive under "elioTax LLC - Secure Document Upload (File responses)". Folder checked in M1: Restricted, owner only.
-  - A family member's Google account plays the test client (M5/M7 re-tests).
-- **Your to-dos before next session (M3):**
-  - Put your logo file(s) and any color samples in a new `brand` folder inside the project folder. Any format works.
-  - Think about: tone (warm / plain / formal), and how clients without a Google account, or with questions, should reach you.
+  - `CONTENT.md` is owner-approved. Build M4 from it word for word. The owner prefers crisp, simple claims (e.g., "never sold or shared") over hedged legal wording.
+  - `site/assets/logo.svg` was converted directly from the original `.ai` vectors. It's the master for any future icon/image work. The icons, preview image, and form header were rendered from it with one-off scripts that weren't kept (WPF is built into Windows; no Python, Node, or ImageMagick on this PC).
+  - Uploads land in the owner's My Drive under "elioTax LLC - Secure Document Upload (File responses)". Folder is Restricted, owner only (checked in M1).
+- **Your to-dos before next session (M4):** Think about the M4 starter questions: open the form in the same tab or a new one? Want eliotaxllc.com/upload as a shortcut? Should the page show up in Google search?
 - **Watch out for:**
-  - Never move, rename, or delete the "(File responses)" folder. The form stops accepting *all* uploads. Deleting a form response doesn't delete its file or Sheet row.
-  - Clients signed into several Google accounts may get upload errors. Fix: private/incognito tab. Mention this in M3 page text.
-  - Claude's shell may not find `git`/`gh` until the app restarts. Refresh PATH from the Machine+User environment first. The app's Terminal panel failed to start on 2026-10-05, so `gh` commands were run from Claude's shell instead.
+  - Brand originals `.ai`, `.pdf`, `.jpg` are git-ignored on purpose: the PDF and JPG hold hidden personal details from the designer's computer. Never commit them. Keep a private backup.
+  - Never move, rename, or delete the "(File responses)" folder (the form stops accepting uploads). Deleting a response doesn't delete its file or Sheet row.
+  - Claude's shell may not find `git`/`gh`. Refresh PATH from the Machine+User environment first. The app's Terminal panel failed to start on 2026-10-05.
+  - M4 needs a local preview server. Node and Python aren't installed, so plan one (e.g., a tiny PowerShell server) and ask before installing anything.

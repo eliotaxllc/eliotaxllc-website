@@ -16,6 +16,13 @@ $RECYCLE.BIN/
 .claude/settings.local.json
 .vscode/
 
+# Brand originals that stay on this computer only (decided M3):
+# the PDF and JPG contain hidden personal details from the designer's computer,
+# and the .ai can't be fully checked. Only the clean PNG original is published.
+brand/ElioTax_ColorCodes.pdf
+brand/ElioTax_FinalLogo_Large.jpg
+brand/ElioTax_FinalLogo.ai
+
 # Safety net: things that must never go public
 *recovery-codes*
 *recovery_codes*

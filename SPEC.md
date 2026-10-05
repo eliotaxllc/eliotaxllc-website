@@ -305,7 +305,7 @@ _Updated YYYY-MM-DD, end of M# session_
    - yearly to-dos: domain renewal, © year, the form's tax-year choices, a pre-season re-test
    - what to do if the link breaks or a client is confused
    - what to do if you suspect your Google account was hacked, including reporting data theft to the IRS (see Pub 4557)
-4. List the facts about this system that belong in your WISP (IRS Pub 5708 template).
+4. List the facts about this system that belong in your WISP (IRS Pub 5708 template). Include any backup channels you use, such as asking clients to text or email a missing document; those are less protected than the upload form.
 5. Do a final check against §3, and draft a short message you can send clients with the link.
 
 **Done when:** The checklist is complete, `OPERATIONS.md` is approved, and you're ready to share eliotaxllc.com.
@@ -336,9 +336,9 @@ About one milestone a week leaves a comfortable cushion before tax season.
 | ~~Extra form fields? File limits? Sheets log?~~ Resolved: tax year yes, phone no, 10 files × 100 MB, Sheet log yes (§3.2) | M1 ✅ |
 | ~~Which Google account plays the "test client"?~~ Resolved: a family member's account | M1 ✅ |
 | ~~GitHub username and repo name~~ Resolved: github.com/eliotaxllc/eliotaxllc-website; commits signed "elioTax LLC" with GitHub's private noreply email; brand originals will be included in the repo | M2 ✅ |
-| How do clients without a Google account, or with questions, reach you? (The page has no contact info by your choice.) | M3 |
-| Include a "what to upload" checklist? | M3 |
-| Privacy note: how long are documents kept? | M3 (finalize in M7) |
+| ~~How do clients without a Google account, or with questions, reach you?~~ Resolved: "reach out the way you usually do" (no contact info on the page), plus a tip about free Google accounts | M3 ✅ |
+| ~~Include a "what to upload" checklist?~~ Resolved: yes, short list (see CONTENT.md) | M3 ✅ |
+| Privacy note: how long are documents kept? Draft: "only as long as I need it for your return and as required by law" | M3 ✅ (finalize in M7) |
 | `/upload` shortcut? Same tab or new tab? Findable on Google? | M4 |
 | Main address with or without www | M6 |
 | Document retention and cleanup routine | M7 |
