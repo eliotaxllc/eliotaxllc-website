@@ -129,6 +129,8 @@ The other originals (`.ai`, `.pdf`, `.jpg`) stay on this computer only (see `.gi
 
 ## Notes for M4 (building the page)
 
+*Built in M4 (2026-10-05). The page also repeats the Upload button after the checklist (owner approved).*
+
 - The button goes to the Google Form: **https://forms.gle/7FcPZm8cmSSvmp8K7**. Keep this link in one clearly marked place (decision D9).
 - Section order: top (logo, headline, intro, button) → How it works → What to send → How your documents are protected → Need help? → Privacy → footer.
 - **Not legal advice:** federal privacy rules for tax preparers (the FTC's rules under the Gramm-Leach-Bliley Act, or GLBA) may require a formal privacy notice. The privacy section above is a plain summary, not a formal notice. Make sure it matches anything else you tell clients.

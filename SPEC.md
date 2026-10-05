@@ -60,7 +60,7 @@ Our website never touches the files. It's a trustworthy front door that points t
 | D6 | Not using TaxAct Client Portals ($299.95/yr) for now. **Do not buy TaxAct Client Xchange — it is retired Oct 31, 2026.** | Budget: as close to free as possible | You want true client accounts, e-signatures, or two-way sharing. Switching = changing one link (D9) |
 | D7 | Plain HTML + CSS. No frameworks, no build step, no JavaScript unless truly needed | Easiest to understand and maintain; nothing to update or break | — |
 | D8 | Host on **GitHub Pages**, published by Claude using Git; **public** repository, including the planning notes (SPEC, handoff, CLAUDE), reconfirmed 2026-10-05 | Free, HTTPS included, full version history/backup, "ask Claude → it's live". The notes contain no secrets; the real protection is 2-step verification plus a private Drive folder | You'd rather the setup details weren't public → move the notes to a separate private repo |
-| D9 | The Upload destination (form link) lives in **one clearly marked place** | Swapping to a different upload service later takes minutes | — |
+| D9 | The Upload destination (form link) lives in **one clearly marked place**: `site/upload/index.html` (the eliotaxllc.com/upload shortcut, which every Upload button points to) | Swapping to a different upload service later takes minutes | — |
 | D10 | Page content: logo + name, "right place" statement, Upload button, how-to steps, security note, fallback for clients without Google, short privacy note. **No** bio, photo, credentials, phone, or contact email (your choice, 2026-10-04) | You want it minimal | M3 — clients without a Google account need *some* way to reach you (see §8) |
 | D11 | English only | — | — |
 | D12 | Domain is at Namecheap. No email on the domain; you'll keep using your existing email | — | You want an address like name@eliotaxllc.com |
@@ -134,6 +134,7 @@ C:\elioTax Website Files\
 ├── handoff.md           ← short "where we left off" note (created at end of M1)
 ├── CONTENT.md           ← approved page text + color palette (M3)
 ├── OPERATIONS.md        ← your plain-language tax-season how-to (M7)
+├── .claude/             ← local preview tool (serve.ps1 + launch.json); never published
 ├── brand/               ← your original logo + color samples (M3)
 ├── site/                ← THE WEBSITE — only this folder gets published
 │   ├── index.html
@@ -339,7 +340,7 @@ About one milestone a week leaves a comfortable cushion before tax season.
 | ~~How do clients without a Google account, or with questions, reach you?~~ Resolved: "reach out the way you usually do" (no contact info on the page), plus a tip about free Google accounts | M3 ✅ |
 | ~~Include a "what to upload" checklist?~~ Resolved: yes, short list (see CONTENT.md) | M3 ✅ |
 | Privacy note: how long are documents kept? Draft: "only as long as I need it for your return and as required by law" | M3 ✅ (finalize in M7) |
-| `/upload` shortcut? Same tab or new tab? Findable on Google? | M4 |
+| ~~`/upload` shortcut? Same tab or new tab? Findable on Google?~~ Resolved: shortcut yes, same tab, findable on Google. Layout: "clean and centered" (option A) | M4 ✅ |
 | Main address with or without www | M6 |
 | Document retention and cleanup routine | M7 |
 
