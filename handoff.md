@@ -1,16 +1,16 @@
 # Handoff — elioTax website
-_Updated 2026-10-05, end of M5 session_
+_Updated 2026-10-05, end of M6 session_
 
-- **Position:** M5 complete → next: M6 (Connect eliotaxllc.com).
-- **Live right now:** Website: **https://eliotaxllc.github.io/eliotaxllc-website/** (temporary address; HTTPS enforced; http redirects to https). Upload form: **https://forms.gle/7FcPZm8cmSSvmp8K7**. Project backup: https://github.com/eliotaxllc/eliotaxllc-website
+- **Position:** M6 complete → next: M7 (Launch readiness & your operating guide).
+- **Live right now:** **https://eliotaxllc.com** (HTTPS enforced; the certificate covers eliotaxllc.com + www). www, http, and https://eliotaxllc.github.io/eliotaxllc-website/ all 301 to https://eliotaxllc.com/. Upload form: **https://forms.gle/7FcPZm8cmSSvmp8K7** (also reachable at eliotaxllc.com/upload). Repo: https://github.com/eliotaxllc/eliotaxllc-website
+- **Namecheap DNS now (Advanced DNS → Host Records):** 4× `A @` → 185.199.108.153 / .109.153 / .110.153 / .111.153; 4× `AAAA @` → 2606:50c0:8000::153 / 8001:: / 8002:: / 8003::153; `CNAME www` → eliotaxllc.github.io.; `TXT _github-pages-challenge-eliotaxllc` (GitHub domain verification, keep it). Mail settings: Email Forwarding, untouched.
+- **DNS before M6 (to fully undo):** `CNAME www` → parkingpage.namecheap.com. and `URL Redirect @` → http://www.eliotaxllc.com/ (Unmasked); also remove the custom domain in the repo's Pages settings.
 - **Not obvious from the files:**
-  - Pages source is "GitHub Actions" (turned on via the API on 2026-10-05). Publishing uses checkout v7, configure-pages v6, upload-pages-artifact v5, and deploy-pages v5 (current official versions as of that date). The first deploy took 16s.
-  - Verified live: all site files return 200; SPEC.md, handoff.md, brand/, and site/index.html paths return 404 (only `site/` is published).
-  - The owner tested on their computer and phone (padlock OK, Upload opens the form). A family member did a dummy upload from the live page: thank-you, email, Drive file, and Sheet row all OK. Test data deleted.
-  - Link-preview image and `canonical` point to https://eliotaxllc.com, so test link previews after M6.
-  - With Actions-based Pages, the custom domain is set in the repo's Pages settings. No CNAME file is needed in `site/`.
-- **Your to-dos before next session (M6):** Have your Namecheap sign-in ready and turn on Namecheap 2-step verification first. Check whether anything is set up at Namecheap (e.g., email forwarding) that must be kept. Main address with or without "www"? (Recommended: without, with www redirecting to it.)
+  - The domain is verified in the eliotaxllc GitHub account (takeover protection). Namecheap 2SV is on (2026-10-05).
+  - Gotcha seen: GitHub's DNS check stuck at "202 in progress" for 70+ min after a brief www NXDOMAIN (negative cache 60 min). Removing and re-adding the custom domain via the API issued the certificate instantly.
+  - The owner verified it on their phone and computer: padlock, www forwarding, Upload opens the form, and the texted link preview shows the logo.
+- **Your to-dos before next session (M7):** Pick 1–2 friendly pilot clients. Think about how long you keep uploads in Drive and where finished files go. Pick a target launch date. **Don't share eliotaxllc.com with clients until M7's checklist is done.**
 - **Watch out for:**
   - Never commit the brand originals `.ai`/`.pdf`/`.jpg` (git-ignored; hidden personal details). Never move, rename, or delete the "(File responses)" folder.
-  - Update "© 2026" in `site/index.html` each January. Any push that changes `site/` goes live, so always ask first.
-  - Claude's shell sometimes can't find `git`/`gh`. Refresh PATH from the Machine+User environment first. In `gh --jq`, avoid spaces/quotes under PowerShell; pipe to ConvertFrom-Json instead.
+  - Any push that changes `site/` goes live within a minute, so always ask first. Update "© 2026" each January.
+  - Claude's shell sometimes can't find `git`/`gh`. Refresh PATH from the Machine+User environment first. Under PowerShell, avoid `gh --jq` with spaces; pipe to ConvertFrom-Json.

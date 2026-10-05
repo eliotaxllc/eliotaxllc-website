@@ -341,7 +341,7 @@ About one milestone a week leaves a comfortable cushion before tax season.
 | ~~Include a "what to upload" checklist?~~ Resolved: yes, short list (see CONTENT.md) | M3 ✅ |
 | Privacy note: how long are documents kept? Draft: "only as long as I need it for your return and as required by law" | M3 ✅ (finalize in M7) |
 | ~~`/upload` shortcut? Same tab or new tab? Findable on Google?~~ Resolved: shortcut yes, same tab, findable on Google. Layout: "clean and centered" (option A) | M4 ✅ |
-| Main address with or without www | M6 |
+| ~~Main address with or without www~~ Resolved: https://eliotaxllc.com is the main address; www, http, and the old github.io address all forward to it | M6 ✅ |
 | Document retention and cleanup routine | M7 |
 
 ---
