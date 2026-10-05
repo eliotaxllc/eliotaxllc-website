@@ -59,7 +59,7 @@ Our website never touches the files. It's a trustworthy front door that points t
 | D5 | Use your **existing** Google account (not a dedicated business account) | Your choice — less setup. **Accepted tradeoff:** client documents share an account and storage with personal data; if that account is compromised, client data is exposed. **Mitigations:** 2-step verification required, private upload folder, regular cleanup (M1, M7). | You hire help, storage fills up, or your security plan calls for separation |
 | D6 | Not using TaxAct Client Portals ($299.95/yr) for now. **Do not buy TaxAct Client Xchange — it is retired Oct 31, 2026.** | Budget: as close to free as possible | You want true client accounts, e-signatures, or two-way sharing. Switching = changing one link (D9) |
 | D7 | Plain HTML + CSS. No frameworks, no build step, no JavaScript unless truly needed | Easiest to understand and maintain; nothing to update or break | — |
-| D8 | Host on **GitHub Pages**, published by Claude using Git; **public** repository | Free, HTTPS included, full version history/backup, "ask Claude → it's live" | — |
+| D8 | Host on **GitHub Pages**, published by Claude using Git; **public** repository, including the planning notes (SPEC, handoff, CLAUDE), reconfirmed 2026-10-05 | Free, HTTPS included, full version history/backup, "ask Claude → it's live". The notes contain no secrets; the real protection is 2-step verification plus a private Drive folder | You'd rather the setup details weren't public → move the notes to a separate private repo |
 | D9 | The Upload destination (form link) lives in **one clearly marked place** | Swapping to a different upload service later takes minutes | — |
 | D10 | Page content: logo + name, "right place" statement, Upload button, how-to steps, security note, fallback for clients without Google, short privacy note. **No** bio, photo, credentials, phone, or contact email (your choice, 2026-10-04) | You want it minimal | M3 — clients without a Google account need *some* way to reach you (see §8) |
 | D11 | English only | — | — |
@@ -335,7 +335,7 @@ About one milestone a week leaves a comfortable cushion before tax season.
 |---|---|
 | ~~Extra form fields? File limits? Sheets log?~~ Resolved: tax year yes, phone no, 10 files × 100 MB, Sheet log yes (§3.2) | M1 ✅ |
 | ~~Which Google account plays the "test client"?~~ Resolved: a family member's account | M1 ✅ |
-| GitHub username and repo name | M2 |
+| ~~GitHub username and repo name~~ Resolved: github.com/eliotaxllc/eliotaxllc-website; commits signed "elioTax LLC" with GitHub's private noreply email; brand originals will be included in the repo | M2 ✅ |
 | How do clients without a Google account, or with questions, reach you? (The page has no contact info by your choice.) | M3 |
 | Include a "what to upload" checklist? | M3 |
 | Privacy note: how long are documents kept? | M3 (finalize in M7) |

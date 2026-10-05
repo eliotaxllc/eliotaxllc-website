@@ -1,17 +1,16 @@
 # Handoff — elioTax website
-_Updated 2026-10-04, end of M1 session_
+_Updated 2026-10-05, end of M2 session_
 
-- **Position:** M1 complete → next: M2 (Backup & version history).
-- **Live right now:** Website: nothing yet. Upload form: live and tested. Client link (public by design): **https://forms.gle/7FcPZm8cmSSvmp8K7** (opens a `/viewform` page that requires Google sign-in).
+- **Position:** M2 complete → next: M3 (Brand & words).
+- **Live right now:** Website: nothing yet. Project backup (public): https://github.com/eliotaxllc/eliotaxllc-website. Upload form (live, tested, public by design): **https://forms.gle/7FcPZm8cmSSvmp8K7**
 - **Not obvious from the files:**
-  - Form title: "elioTax LLC - Secure Document Upload". Questions and settings match SPEC §3.2. Google storage had plenty of free space at setup.
-  - Uploads land in the owner's My Drive under "elioTax LLC - Secure Document Upload (File responses)" → a subfolder for the upload question. File names end with the uploader's Google name. Folder checked: Restricted, owner only; a non-owner gets "You need access."
-  - A family member's Google account plays the test client (for the M5/M7 re-tests).
-- **Your to-dos before next session (M2):**
-  - Be ready to create a free GitHub account (or sign in) and turn on its 2-step verification.
-  - Pick a GitHub username (it shows in the temporary web address); repo name suggestion: `eliotaxllc-website`.
-  - Start gathering your logo and color samples for M3.
+  - Git and GitHub CLI are installed. `gh` is signed in as eliotaxllc (token in the Windows keyring, includes the `workflow` scope M5 needs). Git author identity is set in this repo only.
+  - Uploads land in the owner's My Drive under "elioTax LLC - Secure Document Upload (File responses)". Folder checked in M1: Restricted, owner only.
+  - A family member's Google account plays the test client (M5/M7 re-tests).
+- **Your to-dos before next session (M3):**
+  - Put your logo file(s) and any color samples in a new `brand` folder inside the project folder. Any format works.
+  - Think about: tone (warm / plain / formal), and how clients without a Google account, or with questions, should reach you.
 - **Watch out for:**
-  - Never move, rename, or delete the "(File responses)" folder. The form stops accepting *all* uploads until it's restored. Renaming the form doesn't rename the folder.
-  - Deleting a form response does NOT delete its file or its Sheet row. Delete all three separately.
-  - Clients signed into several Google accounts may get upload errors. Fix: a private/incognito tab with one account. Mention this in M3 page text / the M7 guide.
+  - Never move, rename, or delete the "(File responses)" folder. The form stops accepting *all* uploads. Deleting a form response doesn't delete its file or Sheet row.
+  - Clients signed into several Google accounts may get upload errors. Fix: private/incognito tab. Mention this in M3 page text.
+  - Claude's shell may not find `git`/`gh` until the app restarts. Refresh PATH from the Machine+User environment first. The app's Terminal panel failed to start on 2026-10-05, so `gh` commands were run from Claude's shell instead.
