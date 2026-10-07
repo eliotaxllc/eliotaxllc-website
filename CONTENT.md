@@ -69,7 +69,7 @@ Not sure if you need something? Send it anyway. I'll sort it out.
 - **How I use it:** only to prepare your tax return and to contact you about it.
 - **Who sees it:** your information is never sold or shared.
 - **Where it's kept:** in my private Google Drive. Google runs the upload form, and Google's privacy policy covers your Google sign-in.
-- **How long I keep it:** only as long as I need it for your return and as required by law. Then I delete it. *(Finalize in M7.)*
+- **How long I keep it:** only as long as I need it for your return and as required by law. Then I delete it. *(Confirmed in M7: files move to an encrypted drive after each return and are deleted from Drive.)*
 - **This website** doesn't use cookies, trackers, analytics, or ads.
 
 ### Footer

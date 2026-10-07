@@ -339,10 +339,10 @@ About one milestone a week leaves a comfortable cushion before tax season.
 | ~~GitHub username and repo name~~ Resolved: github.com/eliotaxllc/eliotaxllc-website; commits signed "elioTax LLC" with GitHub's private noreply email; brand originals will be included in the repo | M2 ✅ |
 | ~~How do clients without a Google account, or with questions, reach you?~~ Resolved: "reach out the way you usually do" (no contact info on the page), plus a tip about free Google accounts | M3 ✅ |
 | ~~Include a "what to upload" checklist?~~ Resolved: yes, short list (see CONTENT.md) | M3 ✅ |
-| Privacy note: how long are documents kept? Draft: "only as long as I need it for your return and as required by law" | M3 ✅ (finalize in M7) |
+| Privacy note: how long are documents kept? "Only as long as I need it for your return and as required by law" (confirmed M7) | M3 ✅ / M7 ✅ |
 | ~~`/upload` shortcut? Same tab or new tab? Findable on Google?~~ Resolved: shortcut yes, same tab, findable on Google. Layout: "clean and centered" (option A) | M4 ✅ |
 | ~~Main address with or without www~~ Resolved: https://eliotaxllc.com is the main address; www, http, and the old github.io address all forward to it | M6 ✅ |
-| Document retention and cleanup routine | M7 |
+| ~~Document retention and cleanup routine~~ Resolved: after each return, download to an encrypted computer/external drive, then delete the files, response, and Sheet row from Google (OPERATIONS.md §2). WISP notes kept in git-ignored `private/` | M7 ✅ |
 
 ---
 
@@ -352,6 +352,7 @@ About one milestone a week leaves a comfortable cushion before tax season.
 - A dedicated Google account just for the business (D5).
 - Email at your domain, e.g. you@eliotaxllc.com.
 - A Spanish version; a bio, photo, or contact section.
+- **Visitor stats** (the owner asked 2026-10-07 and chose none for now). Options: Google Search Console, which needs no page change, only a DNS TXT record, and shows Google-search impressions only; or a cookieless counter such as Cloudflare Web Analytics, which adds an outside script, so the page's "no analytics" privacy note and §3.1 would have to change. Uploads are already counted in the Sheet.
 
 ---
 

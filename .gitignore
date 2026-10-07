@@ -23,6 +23,9 @@ brand/ElioTax_ColorCodes.pdf
 brand/ElioTax_FinalLogo_Large.jpg
 brand/ElioTax_FinalLogo.ai
 
+# Private notes that stay on this computer only (decided M7): WISP notes etc.
+private/
+
 # Safety net: things that must never go public
 *recovery-codes*
 *recovery_codes*
