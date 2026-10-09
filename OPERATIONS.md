@@ -19,6 +19,8 @@ You'll get an email ("new response") each time a client submits. To see what cam
 
 A client can submit more than once. Check the Sheet for earlier rows from the same email.
 
+**Check for notices first.** Rows where "What are you sending?" says **Tax notice received** are IRS, state, or local letters, and those often have response deadlines. The alert email doesn't say what was sent, so glance at the Sheet whenever one arrives.
+
 ---
 
 ## 2. After a return is filed: clear it out
@@ -65,7 +67,7 @@ Example: switching to TaxAct Client Portals someday. The form link lives in exac
 
 | When | To-do |
 |---|---|
-| **Early January** | Ask Claude to update the **© year** on the website to the new year. Check the form's **tax-year choices**: the first choice should be *last* year, the year clients are filing for. (January 2027: **2026** / 2025 / Earlier, already set. January 2028: change to **2027** / 2026 / Earlier.) Then do a **pre-season re-test**: a family member uploads a TEST photo from their phone, you confirm the email, file, and Sheet row, then delete all three. |
+| **Early January** | Ask Claude to update the **© year** on the website to the new year. Check the year choices in the form's **"What are you sending?"** question: the first choice should be *last* year, the year clients are filing for. (January 2027: "Documents for **2026**" / "Documents for 2025", already set. January 2028: change them to 2027 / 2026.) Leave "earlier year" and "Tax notice received" as they are. Then do a **pre-season re-test**: a family member uploads a TEST photo from their phone, you confirm the email, file, and Sheet row, then delete all three. |
 | **January** | Send clients the launch message (section 9). Check that Google storage has plenty of room (drive.google.com, bottom left). |
 | **February** | Watch for Namecheap's **renewal reminder**. The domain renews each **March** (Auto-Renew is on); make sure the payment method on file is current. |
 | **Any time a client is confused** | Note what confused them. Ask Claude to reword the page if it keeps happening. |

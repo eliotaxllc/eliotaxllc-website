@@ -1,6 +1,6 @@
 # CONTENT.md: page text, colors, and images
 
-**Status:** ✅ APPROVED by the owner, 2026-10-05 (M3)
+**Status:** ✅ APPROVED by the owner, 2026-10-05 (M3). Tax-notice option added 2026-10-09 (owner requested).
 
 This file is the approved source for everything on the page. M4 builds the page from it word for word. To change the wording later, change it here first.
 
@@ -34,7 +34,7 @@ This is the official, secure place to upload them. It takes about two minutes, a
 
 1. Tap **Upload my documents**.
 2. Sign in with Google. Google asks so I know who sent each file. You type your password on Google's own page, and I never see it.
-3. Enter your name, pick the tax year, and add your files. Phone photos are fine. Just make sure each page is flat, well lit, and easy to read.
+3. Enter your name, choose what you're sending, and add your files. Phone photos are fine. Just make sure each page is flat, well lit, and easy to read.
 4. Tap **Submit**. You'll see a thank-you message. Have more to send? Come back anytime and upload again.
 
 ### What to send
@@ -46,6 +46,7 @@ Common documents:
 - 1098s (mortgage interest, student loan interest, college tuition)
 - Form 1095-A, if you had health insurance through the Marketplace
 - Last year's tax return, if you're new to elioTax
+- Letters or notices from the IRS, your state, or your city. Notices often have deadlines, so send them as soon as they arrive.
 
 Not sure if you need something? Send it anyway. I'll sort it out.
 
@@ -65,7 +66,7 @@ Not sure if you need something? Send it anyway. I'll sort it out.
 
 ### Privacy
 
-- **What I collect:** your name, the email address of the Google account you sign in with, the tax year, any note you write, and the files you upload.
+- **What I collect:** your name, the email address of the Google account you sign in with, what you're sending (tax year or notice), any note you write, and the files you upload.
 - **How I use it:** only to prepare your tax return and to contact you about it.
 - **Who sees it:** your information is never sold or shared.
 - **Where it's kept:** in my private Google Drive. Google runs the upload form, and Google's privacy policy covers your Google sign-in.

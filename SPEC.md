@@ -95,7 +95,7 @@ Our website never touches the files. It's a trustworthy front door that points t
 - Title along the lines of "elioTax LLC — Secure Document Upload." Branded to match the site (M3).
 - Questions (finalized in M1, in this order):
   - Full name (short answer, required).
-  - Tax year (multiple choice, required): 2026 / 2025 / Earlier year. Update the choices each season.
+  - "What are you sending?" (multiple choice, required): Documents for 2026 / Documents for 2025 / Documents for an earlier year / Tax notice received (IRS, state, or local). The notice choice was added 2026-10-09 at the owner's request. Update the year choices each season.
   - Upload documents (file upload, required). Allowed types: PDF, images, documents, spreadsheets. Up to 10 files per submission, up to 100 MB each.
   - Optional note to the preparer, with a warning not to type SSNs or account numbers.
   - No phone number (your choice; Google already records each uploader's verified email).
